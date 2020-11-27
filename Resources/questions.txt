@@ -1,0 +1,193 @@
+Detecting DM around BH with Gravitational Waves:
+
+words/topics of interest:
+
+LIGO/Virgo
+KAGRA
+LISA
+Einstein Telescope
+pulsar timing arrays
+cold dark matter
+dephasing of gravitational waveform
+chirp mass?
+barycenter position
+impact parameter=> b90 degree deflection of DM particle in DF loss equation?
+ISCO?
+Chandrasekhar????
+simpson's rule to evaluate integrals
+runge-kutta method
+courant-friedrichs-lewy condition
+
+
+
+
+Notes:
+
+they consider intermediate mass-ratio inspirals with intermediate-mass BH dressed with DM.
+previous estimates based on fixed DM dress are WRONG for a range of binaries and DM distributions.
+This was proven by showing total energy dissipated by compact object through
+dynamical friction, as it inspirals through DM environment towards the BH,
+is LARGER than the gravitational binding energy of the dark matter dress itself!
+
+the dephasing of the gravitational waveform induced by DM is smaller than previously thought,
+BUT still potentially detectable with LISA space interferometer.
+WOULD PROVIDE POWERFUL DIAGNOSTICS OF THE PARTICLE NATURE OF DM
+
+I. INTRODUCTION
+If dark matter is made of cold collision-less particles, the adiabatic growth of BH's
+may induce the formation of large over-densities around supermassive and intermediate-mass BH's.
+We can detect and characterize these by measuring their impact on the gravitational waveform
+as BHs merge with other compact objects.
+
+IMBH (intermediate-mass black hole) with mass 10^3 = 10^5 solar masses.
+presence of DM exerts dynamical frictional force on compact object, causing it to inspiral more rapidly.
+The resulting gravitational waveform accumulates phase at a different rate compared to the vacuum case.
+
+work done by dynamical friction ~ total binding energy available in the DM spike
+previous assumption of non-evolving dark-matter density profile.
+
+n-body simulation allowed them to accurately model dynamical friction and the scattering of DM particles with the compact object.
+allows them to understand where the energy lost by the compact object is injected in the DM cloud.
+
+Will be detectable, smaller than previously assumed, but potentially detectable by the LISA mission.
+
+
+
+SECTION II. DEMONSTRATION THAT PREVIOUS APPROACH VIOLATES ENERGY CONSERVATION
+Using Newtonian gravity, including dissipative effects arising from
+dynamical friction and gravitational radiation.
+NEGLECT FEEDBACK ON DM HALO AND ASSUME CIRCULAR ORBIT.
+
+They acquire a way to compute the DM mass within a distance r from previous papers.
+They then acquire an equation for the potential energy of the DM spike from inner radius to some radius r (or r sub sp for all).
+not taking into account gravitational effects of compact object is fine, since these will be on order q = m2/m1 <= 1
+
+Assumptions with q ratio with corrections of order q.
+Assume that barycenter position is equal to the IMBH position.
+
+We got some equations for GW and DF losses!
+
+Fig. 2 shows energy dissipated between a separation r2 and rISCO and plot
+the ratio of this energy to the total binding energy of the DM spike.
+only parameter changing is the mass ratios q, with increasingly heavy m2.
+as q decreases and m2 increases, the system has less issues with energy balance
+
+It will therefore by necessary to modify the distribution of DM in response to the
+energy input into the DM spike through DF.
+
+
+
+SECTION III. N-BODY SIM. VALIDATING NEW MODEL FOR DYNAMICAL FRICTION.
+b_max is a very important impact parameter as it
+determines which DM particles in the spike interact gravitationally
+with the orbiting compact object and therefore governs how energy is injected into the spike.
+They used the gadget-2 ode in order to determine the value of maximum impact parameter.
+explained below (3.3)
+VERY computationally intensive
+kinda getting lost with the softening length and the b impact parameters?
+
+The dynamical friction process therefore takes place only over a small region close to the orbiting compact object.
+This implies that it is consistent to model the dynamical friction force for the nonuniform systems
+using the local density, and it further implies that the dephasing effect could be used to accurately
+trace out the density profile as a function of radius.
+
+
+SECTION IV. PRESCRIPTION FOR EVOLVING PHASE SPACE DISTRIBUTION OF DM
+Assume that orbital elements evolve on a timescale that is long compared to the orbital period.
+Assume that the equilibration timescale for the DM halo is much shorter than the timescale for the secular evolution of the system.
+Assume that DM halo is spherically symmetric and isotropic and remains so throughout the evolution of the system.
+
+If we can study the evolution of the distribution function f, then we can self-consistently evolve the DM
+halo along with the binary and reconstruct the density profile, which is required to calculate the dynamical friction force.
+
+They derive the density profile throughout the spike which in turn is used to evaluate the rate of energy loss due to DF.
+
+Fig. 8???
+DM particles are gradually depleted from close to the compact object through scattering; at the end of the simulation,
+the density at the orbital radius has dropped to 3% of the initial density.
+
+
+
+SECTION V. USE OF PRESCRIPTION TO ACCULATELY FOLLOW EVOLUTION OF BINARY AND DM SPIKE.
+they came to some reasonable initial conditions after describing the issue with setting them.
+
+Also, the dynamical friction effect is of a negative
+post-Newtonian order for quasicircular binaries, mean-
+ing that it is largest when the binary is less relativistic.
+
+feedback on the DM halo leads to a depletion o fthe DM density at the orbital radius.
+This in turn reduces the size of the dynamical friction force and thus slows the inspiral.
+There is therefore competition between how quickly the compact object depletes DM and
+how rapidly dynamical friction causes it to lose energy.
+
+To quantify the sizze of the dephasing effect, we estimate the difference between
+the number of GW cycles during the inspiral in vacuum and in the presence of the DM mini-spike,
+for both the dynamic and static cases.
+
+Fig. 9
+It is clear from Fig. 9 that the maximum allowed size of the dephasing effect, obtained
+in this toy model, can be as much as to orders of magnitude smaller than that estimated in the static case.
+
+mismatch in observation time with LISA operation
+
+For a central IMBH with m1 = 10^3 solar mass, assuming a static DM spike with slope gamma_sp = 7/3,
+the dephasing effect would reduce the number of GW cycles from the value in vacuum by roughly 5%.
+HOWEVER, modeling the dynamics of the spike, which responds to incorporating feedbacker from the orbiting compact object, we find
+the dephasing effect is reduced to 0.06%.
+
+Fig. 10 looks important. Frequency evolution of the IMRI system.
+Mass ratio q = O(10^-4) is promising target for detecting the effect of a DM spike on the gravitational waveform.
+
+the effects of DM on the emitted GWs will allow properties of the DM distribution to be measured from the observed GWs by an interferometer like LISA.
+Further refinements to their numerical procedure will be required to determine the precise size of the dephasing effect in this case.
+
+As well as reducing the number of GW cycles, dynamical friction is also expected to shorten the inspiral time between two fixed frequencies.
+We also see that the inspiral time is very sensitive to the slope of the DM distribution,
+rapidly becoming undetectable for a mild slope of gamma_sp = 3.2.
+
+
+
+SECTION VI. POSSIBLE CAVEATS AND IMPLICATIONS FOR DETECTION.
+Possibility that DM particles may diffuse in energy through small-angle scattering with each other, ultimately refilling the depleted regions.
+Also, not necessarily spherically symmetric.
+Binary will inject angular momentum into the halo just as in injects energy for a torus.
+But not bad, because these corrections are of higher order??
+
+Newtonian description not as bad for reasons:
+?? i and ii and iii?
+
+We chose the final 5 years of inspiral, because the amplitude of the GWs will be largest during this
+last stage of the inspiral, which will typically imply that the system would have the largest signal-to-noise ratio.
+
+In addition, in order to assess the prospects for detection, we must explore in detail
+how many such systems we expect to observe and with what properties.
+
+
+
+SECTION VII. CONCLUSION
+DM over densities around IMBH inevitably modify the dynamics of inspiraling compact objects,
+and could potentially be detected through their impact on the gravitational waveform produced by the binary inspiral.
+
+DF in general speeds up the inspiral, reducing the number of GW cycles which would be observed by experiments such as LISA.
+For a heavier central IMBH of m2=10^4 solar masses, their prescription leads to only a 50% diff in dephasing, wrt the static case.
+The effect however still corresponds to 7300 GW cycles, which should be observable and distinguishable by LISA.
+
+Dynamical friction signicantly shortens the inspiral
+time. For a mass ratio q = 10􀀀3, a 5-year inspiral in
+vacuum would be shortened by more than 1 year in the
+presence of a static DM spike with
+sp = 7=3.
+
+We have
+however shown that incorporating the feedback on the
+dark-matter distribution leads to a dierence in inspiral
+time with respect to the vacuum case of only 4 days.
+
+We also found that the dephasing eect is very sensitive
+to the slope of the DM distribution, rapidly becoming
+less than one gravitational-wave cycle for a mild slope of
+sp = 3=2.
+
+We anticipate
+that these systems will be detectable and that they could
+provide information about the nature of dark matter.
